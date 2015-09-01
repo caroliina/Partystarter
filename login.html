@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Log in</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Stylesheets -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/styles.css" rel="stylesheet">
+    <link href="static/css/my-styles.css" rel="stylesheet">
+    <!-- END Stylesheets -->
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><i class="glyphicon glyphicon-gift"></i> Partystarter</a>
+            </div>
+        </div>
+    </nav>
+    <!-- END Navigation bar -->
+
+    <!-- Sections -->
+    <div class="container">
+        <form class="col-sm-4 col-xs-12 login-container" action="login.php" method="post">
+            <div class="list-group text-center">
+                <a class="list-group-item active">
+                    <h2 class="list-group-item-heading login-heading">Log in</h2>
+                </a>
+                <a class="list-group-item">
+                    <p class="list-group-item-text">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <div id='errorDiv' class='login_error'></div>
+                            <input type="text" class="form-control" name="email" id="email" placeholder="E-mail">
+                        </div>
+                    </p>
+                </a>
+                <a class="list-group-item">
+                    <p class="list-group-item-text">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" value="">
+                        </div>
+                    </p>
+                </a>
+                <div class="list-group-item log-in">
+                    <label>
+                        <input type="checkbox" checked><span class="show-hand"> Keep me logged in</span>
+                    </label>
+                    <span class="login-btn"><button href="#" type="submit" class="btn btn-primary">Log in</button></span>
+                </div>
+                <span class="list-group-item">
+                    <a href="signup.html">
+                        <span class="show-hand">
+                            Sign up!
+                        </span>
+                    </a>
+                </span>
+            </div>
+        </form>
+    </div>
+    <!-- END Sections -->
+
+    <!-- Script references -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/scripts.js"></script>
+    <!-- END Script references -->
+
+</body>
+
+</html>
